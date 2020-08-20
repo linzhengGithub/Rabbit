@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rabbit</title>
+</head>
+<style>
+  #demo{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    overflow-y: auto;
+  }
+  #demo2{
+    display: none;
+  }
+  #html{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+  }
+  #button{
+    position: fixed;
+    right: 0;top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0 0 ;
+  }
+  #button >button{
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    background: antiquewhite;
+    color: #2E2E2E;
+    cursor: pointer;
+  }
+  #button >button:focus{outline:none;}
+</style>
+<body>
+<div id="demo"></div>
+<style id="demo2"></style>
+<div id="button">
+  <button id="pause">暂停</button>
+  <button id="play">播放</button>
+  <button id="slow">慢速</button>
+  <button id="normal">中速</button>
+  <button id="fast">快速</button>
+</div>
+<div id="html">
+  <div class="container">
+    <div class="bodily">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth left"></div>
+      <div class="mouth right"></div>
+      <div class="nose"></div>
+      <div class="tongue"></div>
+      <div class="belly"></div>
+    </div>
+    <div class="ear left">
+      <div class="inner-ear-left"></div>
+    </div>
+    <div class="ear right">
+      <div class="inner-ear-right"></div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="test.js"></script>
+</html>
